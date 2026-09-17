@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <defs>
+    <linearGradient id="wallDesk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFEDE6"/><stop offset="1" stop-color="#E4E0D4"/></linearGradient>
+    <linearGradient id="floorDesk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CBB998"/><stop offset="1" stop-color="#B39C78"/></linearGradient>
+    <linearGradient id="deskTop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4F3B2A"/><stop offset="1" stop-color="#3A2B1E"/></linearGradient>
+    <radialGradient id="glowDesk" cx="0.5" cy="0.15" r="0.85"><stop offset="0" stop-color="#FFF7E6" stop-opacity=".7"/><stop offset="1" stop-color="#FFF7E6" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="420" fill="url(#wallDesk)"/>
+  <rect x="0" y="296" width="800" height="124" fill="url(#floorDesk)"/>
+  <rect x="0" y="296" width="800" height="6" fill="#8C7550" opacity=".5"/>
+  <ellipse cx="400" cy="120" rx="380" ry="150" fill="url(#glowDesk)"/>
+  <g>
+    <rect x="40" y="228" width="220" height="16" rx="4" fill="url(#deskTop)"/>
+    <rect x="55" y="244" width="10" height="50" fill="#2B1F15"/><rect x="235" y="244" width="10" height="50" fill="#2B1F15"/>
+    <rect x="80" y="170" width="90" height="58" rx="4" fill="#171D25"/><rect x="86" y="176" width="78" height="46" rx="2" fill="#3E5FC0"/>
+    <rect x="118" y="228" width="14" height="8" fill="#171D25"/>
+    <rect x="180" y="205" width="42" height="26" rx="3" fill="#DADFE6"/><rect x="185" y="210" width="30" height="4" fill="#8CA0FF"/><rect x="185" y="217" width="20" height="4" fill="#C7CDD6"/>
+    <rect x="66" y="248" width="46" height="14" rx="6" fill="#24399E"/><rect x="82" y="262" width="12" height="26" rx="5" fill="#151C2A"/>
+  </g>
+  <g>
+    <rect x="300" y="222" width="220" height="16" rx="4" fill="url(#deskTop)"/>
+    <rect x="315" y="238" width="10" height="56" fill="#2B1F15"/><rect x="495" y="238" width="10" height="56" fill="#2B1F15"/>
+    <rect x="340" y="150" width="100" height="66" rx="4" fill="#171D25"/><rect x="347" y="157" width="86" height="52" rx="2" fill="#8F5D10" opacity=".18"/><rect x="347" y="157" width="86" height="52" rx="2" fill="#3E5FC0"/>
+    <rect x="382" y="216" width="16" height="8" fill="#171D25"/>
+    <rect x="440" y="196" width="44" height="30" rx="3" fill="#EFEAE0"/><rect x="446" y="202" width="32" height="4" fill="#B7ADA0"/><rect x="446" y="209" width="22" height="4" fill="#CFC6B8"/>
+    <circle cx="330" cy="205" r="10" fill="#E8DCC5"/>
+    <rect x="326" y="252" width="48" height="14" rx="6" fill="#24399E"/><rect x="344" y="266" width="12" height="28" rx="5" fill="#151C2A"/>
+  </g>
+  <g>
+    <rect x="560" y="230" width="200" height="16" rx="4" fill="url(#deskTop)"/>
+    <rect x="574" y="246" width="10" height="48" fill="#2B1F15"/><rect x="736" y="246" width="10" height="48" fill="#2B1F15"/>
+    <rect x="596" y="176" width="88" height="56" rx="4" fill="#171D25"/><rect x="602" y="182" width="76" height="44" rx="2" fill="#3E5FC0"/>
+    <rect x="632" y="232" width="14" height="8" fill="#171D25"/>
+    <rect x="694" y="210" width="38" height="24" rx="3" fill="#DADFE6"/>
+    <rect x="582" y="250" width="44" height="14" rx="6" fill="#24399E"/><rect x="598" y="264" width="12" height="26" rx="5" fill="#151C2A"/>
+  </g>
+  <path d="M760 296 C 758 250 720 246 722 200" stroke="#3F6B4E" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <ellipse cx="722" cy="196" rx="28" ry="18" fill="#4C7A5C"/><ellipse cx="738" cy="212" rx="22" ry="14" fill="#588A66"/>
+  <text x="60" y="380" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#2B3947">Dedicated desk</text>
+  <text x="60" y="404" font-family="Arial, sans-serif" font-size="14" fill="#5F6E7D">Hot-desking · shared amenities · flexible seats</text>
+</svg>

@@ -1,0 +1,423 @@
+{
+  "tenants": [
+    {
+      "id": "tenant_demo",
+      "name": "Vantage Workspaces",
+      "slug": "vantage-workspaces"
+    }
+  ],
+  "users": [
+    {
+      "id": "user_1",
+      "tenant_id": "tenant_demo",
+      "name": "Priya Nair",
+      "email": "priya@vantage-workspaces.com",
+      "phone": "+91 98100 00001",
+      "role": "Sales Rep",
+      "markets": [
+        "Golf Course Road",
+        "Cyber Hub"
+      ],
+      "capacity": 12,
+      "active": true
+    },
+    {
+      "id": "user_2",
+      "tenant_id": "tenant_demo",
+      "name": "Devansh Rao",
+      "email": "devansh@vantage-workspaces.com",
+      "phone": "+91 98100 00002",
+      "role": "Sales Rep",
+      "markets": [
+        "Sector 44",
+        "Nehru Place"
+      ],
+      "capacity": 12,
+      "active": true
+    },
+    {
+      "id": "user_3",
+      "tenant_id": "tenant_demo",
+      "name": "Meera Joshi",
+      "email": "meera@vantage-workspaces.com",
+      "phone": "+91 98100 00003",
+      "role": "Sales Manager",
+      "markets": [
+        "Indiranagar",
+        "Koramangala"
+      ],
+      "capacity": 15,
+      "active": true
+    }
+  ],
+  "inventory": [
+    {
+      "id": "VW-CAB-704",
+      "tenant_id": "tenant_demo",
+      "centre": "Vantage Workspaces",
+      "unit": "Cabin 704",
+      "product_type": "private_office",
+      "market": "Golf Course Road",
+      "seats": 8,
+      "price": 12500,
+      "floor_price": 11000,
+      "available": 4,
+      "available_from": null,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "24x7 access"
+      ],
+      "active": true
+    },
+    {
+      "id": "VW-MR-44",
+      "tenant_id": "tenant_demo",
+      "centre": "Qdesq Express",
+      "unit": "Express Meeting Room",
+      "product_type": "meeting_room",
+      "market": "Sector 44",
+      "seats": 4,
+      "price": 500,
+      "floor_price": 450,
+      "available": 2,
+      "available_from": null,
+      "amenities": [
+        "Display",
+        "WiFi",
+        "Whiteboard"
+      ],
+      "active": true
+    },
+    {
+      "id": "VW-OFF-12A",
+      "tenant_id": "tenant_demo",
+      "centre": "Vantage Workspaces",
+      "unit": "Private Office 12A",
+      "product_type": "private_office",
+      "market": "Cyber Hub",
+      "seats": 12,
+      "price": 18000,
+      "floor_price": 16000,
+      "available": 1,
+      "available_from": null,
+      "amenities": [
+        "Reception",
+        "Parking",
+        "AC"
+      ],
+      "active": true
+    }
+  ],
+  "leads": [
+    {
+      "id": "lead_demo_1",
+      "tenant_id": "tenant_demo",
+      "company": "Northstar Analytics",
+      "contact": "Rhea Kapoor",
+      "source": "meta",
+      "channel": "whatsapp",
+      "stage": "WARM",
+      "score": 84,
+      "created_at": "2026-09-15T08:30:00.000Z",
+      "updated_at": "2026-09-15T09:05:00.000Z",
+      "messages": []
+    },
+    {
+      "id": "lead_demo_2",
+      "tenant_id": "tenant_demo",
+      "company": "Orbit Legal",
+      "contact": "Aman Verma",
+      "source": "portal",
+      "channel": "portal",
+      "stage": "MATCHED",
+      "score": 68,
+      "created_at": "2026-09-15T10:00:00.000Z",
+      "updated_at": "2026-09-15T10:12:00.000Z",
+      "messages": []
+    },
+    {
+      "id": "lead_demo_3",
+      "tenant_id": "tenant_demo",
+      "company": "Marigold Studio",
+      "contact": "Ishita Rao",
+      "source": "web",
+      "channel": "web",
+      "stage": "SHORTLIST",
+      "score": 56,
+      "created_at": "2026-09-15T12:10:00.000Z",
+      "updated_at": "2026-09-17T16:06:10.813Z",
+      "messages": [],
+      "score_breakdown": {
+        "intent": 30,
+        "requirement": 100,
+        "inventoryFit": 36,
+        "budgetFit": 100,
+        "timeline": 65,
+        "engagement": 0
+      },
+      "next_action": "SEND_SHORTLIST",
+      "next_action_reason": "Requirement is complete and grounded inventory matches exist.",
+      "next_action_priority": "HIGH",
+      "next_action_requires_human": false
+    }
+  ],
+  "requirements": [
+    {
+      "id": "req_1",
+      "lead_id": "lead_demo_1",
+      "product_type": "private_office",
+      "seats": 8,
+      "market": "Golf Course Road",
+      "budget": 15000,
+      "move_in_date": "Immediate",
+      "tenure": "12 months",
+      "fit_out": "furnished",
+      "notes": "",
+      "confidence": {
+        "seats": 0.98,
+        "market": 0.96,
+        "budget": 0.92
+      },
+      "version": 1,
+      "updated_at": "2026-09-15T09:05:00.000Z"
+    },
+    {
+      "id": "req_2",
+      "lead_id": "lead_demo_2",
+      "product_type": "private_office",
+      "seats": 10,
+      "market": "Golf Course Road",
+      "budget": 18000,
+      "move_in_date": "1 Oct",
+      "tenure": "24 months",
+      "fit_out": "furnished",
+      "notes": "",
+      "confidence": {
+        "seats": 0.9,
+        "market": 0.9,
+        "budget": 0.95
+      },
+      "version": 1,
+      "updated_at": "2026-09-15T10:12:00.000Z"
+    },
+    {
+      "id": "req_3",
+      "lead_id": "lead_demo_3",
+      "product_type": "dedicated_desk",
+      "seats": 6,
+      "market": "Golf Course Road",
+      "budget": 14000,
+      "move_in_date": "15 Oct",
+      "tenure": "12 months",
+      "fit_out": "furnished",
+      "notes": "",
+      "confidence": {
+        "seats": 0.8
+      },
+      "version": 1,
+      "updated_at": "2026-09-15T12:20:00.000Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "book_demo",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_1",
+      "inventory_id": "VW-CAB-704",
+      "date": "2026-09-18",
+      "time": "15:00",
+      "seats": 4,
+      "status": "CONFIRMED",
+      "reference": "QD-VW-CAB-704-1842",
+      "created_at": "2026-09-15T09:10:00.000Z"
+    }
+  ],
+  "tours": [
+    {
+      "id": "tour_demo",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_1",
+      "inventory_id": "VW-CAB-704",
+      "date": "2026-09-18",
+      "time": "15:00",
+      "mode": "in_person",
+      "status": "CONFIRMED",
+      "created_at": "2026-09-15T09:11:00.000Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act_1",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_1",
+      "type": "WHATSAPP",
+      "title": "Lead replied on WhatsApp",
+      "body": "Needs 8 seats on Golf Course Road, budget up to ₹15,000.",
+      "created_at": "2026-09-15T09:00:00.000Z"
+    },
+    {
+      "id": "act_2",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_1",
+      "type": "AI",
+      "title": "AI qualification completed",
+      "body": "8 seats · Golf Course Road · ₹15,000 · furnished · 12 months.",
+      "created_at": "2026-09-15T09:04:00.000Z"
+    },
+    {
+      "id": "act_3",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_1",
+      "type": "CALL",
+      "title": "Follow-up call task created",
+      "body": "Call now — warm lead SLA active.",
+      "created_at": "2026-09-15T09:05:00.000Z"
+    },
+    {
+      "id": "act_0720c8e40445",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_3",
+      "type": "WHATSAPP",
+      "title": "Shortlist sent",
+      "body": "Sent 1 grounded option to the lead.",
+      "created_at": "2026-09-17T16:06:10.812Z"
+    }
+  ],
+  "handoffs": [
+    {
+      "id": "handoff_demo",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_1",
+      "owner": "Priya Nair",
+      "reason": "High-fit warm lead",
+      "status": "OPEN",
+      "created_at": "2026-09-15T09:12:00.000Z"
+    }
+  ],
+  "cadence": [
+    {
+      "id": "c1",
+      "offset": "T+2h",
+      "channel": "WhatsApp",
+      "action": "Send value follow-up",
+      "enabled": true
+    },
+    {
+      "id": "c2",
+      "offset": "T+1d",
+      "channel": "Call",
+      "action": "Create follow-up task",
+      "enabled": true
+    },
+    {
+      "id": "c3",
+      "offset": "T+2d",
+      "channel": "Email",
+      "action": "Send alternatives",
+      "enabled": true
+    },
+    {
+      "id": "c4",
+      "offset": "T+4d",
+      "channel": "WhatsApp",
+      "action": "Offer tour",
+      "enabled": true
+    },
+    {
+      "id": "c5",
+      "offset": "T+7d",
+      "channel": "Call",
+      "action": "Final call",
+      "enabled": true
+    },
+    {
+      "id": "c6",
+      "offset": "T+14d",
+      "channel": "WhatsApp",
+      "action": "Move to nurture",
+      "enabled": true
+    }
+  ],
+  "events": [
+    {
+      "id": "evt_ab47c7d72f18",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_3",
+      "event_type": "SCORE_UPDATED",
+      "payload": {
+        "score": 56,
+        "breakdown": {
+          "intent": 30,
+          "requirement": 100,
+          "inventoryFit": 36,
+          "budgetFit": 100,
+          "timeline": 65,
+          "engagement": 0
+        }
+      },
+      "source": "nia",
+      "created_at": "2026-09-17T16:06:10.809Z"
+    },
+    {
+      "id": "evt_1a935f867fc0",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_3",
+      "event_type": "DECISION",
+      "payload": {
+        "action": "SEND_SHORTLIST",
+        "priority": "HIGH",
+        "reason": "Requirement is complete and grounded inventory matches exist.",
+        "requires_human": false
+      },
+      "source": "nia",
+      "created_at": "2026-09-17T16:06:10.811Z"
+    },
+    {
+      "id": "evt_912496942c54",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_3",
+      "event_type": "INVENTORY_MATCHED",
+      "payload": {
+        "count": 1
+      },
+      "source": "nia",
+      "created_at": "2026-09-17T16:06:10.811Z"
+    },
+    {
+      "id": "evt_fd169af8b689",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_3",
+      "event_type": "SHORTLIST_GENERATED",
+      "payload": {
+        "ids": [
+          "VW-CAB-704"
+        ]
+      },
+      "source": "nia",
+      "created_at": "2026-09-17T16:06:10.812Z"
+    },
+    {
+      "id": "evt_8611dcd23e4c",
+      "tenant_id": "tenant_demo",
+      "lead_id": "lead_demo_3",
+      "event_type": "SHORTLIST_SENT",
+      "payload": {
+        "count": 1
+      },
+      "source": "nia",
+      "created_at": "2026-09-17T16:06:10.813Z"
+    }
+  ],
+  "voice_sessions": [],
+  "automation": {
+    "enabled": true,
+    "liveQualify": true,
+    "autoQualify": true,
+    "autoMatch": true,
+    "autoShortlist": true,
+    "autoNurture": true,
+    "autoHandover": true,
+    "voiceEnabled": true
+  }
+}
